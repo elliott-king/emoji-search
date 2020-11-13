@@ -9,15 +9,12 @@ import filterEmoji from './search/filterEmoji'
 
 function App() {
   const [emoji, setEmoji] = useState(filterEmoji("", 25))
-
-  const handleSearchChange = (event) => {
-    setEmoji(filterEmoji(event.target.value, 25))
-  }
+  // TODO: note that setEmoji is not used
 
   return (
     <div className="App">
       <Header />
-      <SearchInput handleSearchChange={handleSearchChange}/>
+      <SearchInput />
       <EmojiResultsContainer emojiList={emoji}/>
     </div>
   )

@@ -7,7 +7,8 @@ const EmojiResultsContainer = (props) => {
 
   return (
     <div className="emoji-results-container">
-      {emojiList.map(emoji => <EmojiResultRow emoji={emoji} key={emoji.title} />)}
+      {/* TODO: create some rows using your emojiList */}
+      <p>{emojiList[0].symbol}</p>
     </div>
   )
 }

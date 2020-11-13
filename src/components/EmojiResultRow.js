@@ -12,9 +12,8 @@ const EmojiResultRow = (props) => {
 
   return (
     <div className="emoji-result-row" onClick={copyToClipboard}>
-      <img alt={emoji.title} src={imgSrc} />
-      <span className="title">{emoji.title}</span>
-      <span className="info">Click to copy emoji</span>
+      {/* TODO: fill in this div with an image and name, and maybe some informational text.
+      Feel free to check the CSS and https://elliott-king.github.io/emoji-search/ */}
     </div>
   )
 }
